@@ -24,6 +24,21 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         
         self.collectionView?.backgroundColor = UIColor.white
         self.collectionView?.register(VideoCell.self, forCellWithReuseIdentifier: Constants.identifierCell)
+        self.collectionView?.contentInset = UIEdgeInsetsMake(50, 0, 0, 0)
+        self.collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(50, 0, 0, 0)
+        
+        setupMenuBar()
+    }
+    
+    let menuBar: MenuBar = {
+        let menuBar = MenuBar()
+        return menuBar
+    }()
+    
+    private func setupMenuBar() {
+        self.view.addSubview(menuBar)
+        self.view.addConstraintsWithFormat(format: "H:|[v0]|", views: menuBar)
+        self.view.addConstraintsWithFormat(format: "V:|[v0(50)]", views: menuBar)
     }
 
     override func didReceiveMemoryWarning() {

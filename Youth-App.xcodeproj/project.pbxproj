@@ -16,6 +16,8 @@
 		730B18741E8CFC3F00F013A8 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730B186D1E8CFC3F00F013A8 /* UIViewExtension.swift */; };
 		730B18751E8CFC3F00F013A8 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730B186E1E8CFC3F00F013A8 /* Video.swift */; };
 		730B18761E8CFC3F00F013A8 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730B186F1E8CFC3F00F013A8 /* VideoCell.swift */; };
+		73408CBC1E8D56770078EE50 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73408CBB1E8D56770078EE50 /* MenuBar.swift */; };
+		73408CBE1E8D5F5D0078EE50 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73408CBD1E8D5F5D0078EE50 /* MenuCell.swift */; };
 		73ADD72D1E8D12AC001185F4 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ADD72C1E8D12AC001185F4 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		730B186D1E8CFC3F00F013A8 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		730B186E1E8CFC3F00F013A8 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		730B186F1E8CFC3F00F013A8 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		73408CBB1E8D56770078EE50 /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		73408CBD1E8D5F5D0078EE50 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		73ADD72C1E8D12AC001185F4 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +119,8 @@
 			children = (
 				730B186F1E8CFC3F00F013A8 /* VideoCell.swift */,
 				730B18691E8CFC3F00F013A8 /* BaseCell.swift */,
+				73408CBB1E8D56770078EE50 /* MenuBar.swift */,
+				73408CBD1E8D5F5D0078EE50 /* MenuCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -193,6 +199,8 @@
 				730B18761E8CFC3F00F013A8 /* VideoCell.swift in Sources */,
 				730B18731E8CFC3F00F013A8 /* HomeController.swift in Sources */,
 				730B18711E8CFC3F00F013A8 /* Channel.swift in Sources */,
+				73408CBC1E8D56770078EE50 /* MenuBar.swift in Sources */,
+				73408CBE1E8D5F5D0078EE50 /* MenuCell.swift in Sources */,
 				730B18741E8CFC3F00F013A8 /* UIViewExtension.swift in Sources */,
 				73ADD72D1E8D12AC001185F4 /* UIColorExtension.swift in Sources */,
 				730B18751E8CFC3F00F013A8 /* Video.swift in Sources */,
