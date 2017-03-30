@@ -80,7 +80,7 @@ class VideoCell: BaseCell {
     
     let seperator: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.black
+        view.backgroundColor = UIColor.rgb(red: 230, green: 230, blue: 230)
         return view
     }()
 }
