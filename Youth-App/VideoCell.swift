@@ -14,11 +14,8 @@ class VideoCell: BaseCell {
     var video: Video? {
         didSet {
             titleLabel.text = video?.title
-            thumbnailImageView.image = UIImage(named: (video?.thumbnailImageName)!)
-            
-            if let profileImageName = video?.channel?.profileImageName {
-                userProfileImageView.image = UIImage(named: profileImageName)
-            }
+            setupThumbnailImage()
+            setupProfileImageImage()
             
             if let channelName = video?.channel?.name, let numberOfView = video?.numberOfView {
                 
@@ -41,6 +38,18 @@ class VideoCell: BaseCell {
                     titleLabelHeightConstraint?.constant = 20
                 }
             }
+        }
+    }
+    
+    func setupThumbnailImage(){
+        if let thumbnailImageURL = video?.thumbnailImageName {
+            thumbnailImageView.loadImageUsingUrlString(urlString: thumbnailImageURL)
+        }
+    }
+    
+    func setupProfileImageImage() {
+        if let profileImageURL = video?.channel?.profileImageName {
+            userProfileImageView.loadImageUsingUrlString(urlString: profileImageURL)
         }
     }
     
@@ -77,7 +86,7 @@ class VideoCell: BaseCell {
         addConstraint(titleLabelHeightConstraint!)
         
         //Top of subtitleTextView
-        addConstraint(NSLayoutConstraint(item: subtitleTextView, attribute: .top, relatedBy: .equal, toItem: titleLabel, attribute: .bottom, multiplier: 1, constant: 8))
+        addConstraint(NSLayoutConstraint(item: subtitleTextView, attribute: .top, relatedBy: .equal, toItem: titleLabel, attribute: .bottom, multiplier: 1, constant: 4))
         
         //Left of subtitleTextView
         addConstraint(NSLayoutConstraint(item: subtitleTextView, attribute: .left, relatedBy: .equal, toItem: userProfileImageView, attribute: .right, multiplier: 1, constant: 8))
@@ -86,16 +95,21 @@ class VideoCell: BaseCell {
         addConstraint(NSLayoutConstraint(item: subtitleTextView, attribute: .right, relatedBy: .equal, toItem: thumbnailImageView, attribute: .right, multiplier: 1, constant: 0))
         
         //height of subtitleTextView
-        addConstraint(NSLayoutConstraint(item: subtitleTextView, attribute: .height, relatedBy: .equal, toItem: self, attribute: .height, multiplier: 0, constant: 20))
+        addConstraint(NSLayoutConstraint(item: subtitleTextView, attribute: .height, relatedBy: .equal, toItem: self, attribute: .height, multiplier: 0, constant: 30))
     }
     
     let thumbnailImageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
         return imageView
     }()
     
     let userProfileImageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        imageView.layer.cornerRadius = 22
+        imageView.layer.masksToBounds = true
         return imageView
     }()
     
