@@ -9,6 +9,11 @@
 import Foundation
 
 class Video: NSObject {
+    
     var thumbnailImageName: String?
     var title: String?
+    var numberOfView: NSNumber?
+    var uploadDate: NSDate?
+    
+    var channel: Channel?
 }
