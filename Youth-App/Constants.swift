@@ -10,4 +10,5 @@ import Foundation
 
 class Constants {
     static let identifierCell: String = "Cell"
+    static let homeURL: String = "https://s3-us-west-2.amazonaws.com/youtubeassets/home.json"
 }
