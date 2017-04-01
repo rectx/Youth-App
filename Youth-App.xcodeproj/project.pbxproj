@@ -20,6 +20,7 @@
 		73408CBE1E8D5F5D0078EE50 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73408CBD1E8D5F5D0078EE50 /* MenuCell.swift */; };
 		73ADD72D1E8D12AC001185F4 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ADD72C1E8D12AC001185F4 /* UIColorExtension.swift */; };
 		73EEE7D31E8E9937008DA1C7 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EEE7D21E8E9937008DA1C7 /* UIImageViewExtension.swift */; };
+		73EEE7D51E8EB075008DA1C7 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EEE7D41E8EB075008DA1C7 /* CustomImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		73408CBD1E8D5F5D0078EE50 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		73ADD72C1E8D12AC001185F4 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		73EEE7D21E8E9937008DA1C7 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		73EEE7D41E8EB075008DA1C7 /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				730B18691E8CFC3F00F013A8 /* BaseCell.swift */,
 				73408CBB1E8D56770078EE50 /* MenuBar.swift */,
 				73408CBD1E8D5F5D0078EE50 /* MenuCell.swift */,
+				73EEE7D41E8EB075008DA1C7 /* CustomImageView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				730B18751E8CFC3F00F013A8 /* Video.swift in Sources */,
 				730B18701E8CFC3F00F013A8 /* BaseCell.swift in Sources */,
 				730B18581E8CFB7600F013A8 /* AppDelegate.swift in Sources */,
+				73EEE7D51E8EB075008DA1C7 /* CustomImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
