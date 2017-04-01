@@ -99,9 +99,6 @@ class VideoCell: BaseCell {
         //height of subtitleTextView
         addConstraint(NSLayoutConstraint(item: subtitleTextView, attribute: .height, relatedBy: .equal, toItem: self, attribute: .height, multiplier: 0, constant: 30))
         
-        //center of loading indicator
-        addConstraintsWithFormat(format: "H:|[v0]|", views: loadingIndicator)
-        addConstraintsWithFormat(format: "V:|[v0]|", views: loadingIndicator)
     }
     
     let thumbnailImageView: CustomImageView = {
