@@ -44,7 +44,6 @@ class SettingLauncher: NSObject, UICollectionViewDelegateFlowLayout {
     }
     
     func showSetting() {
-        print("handleMore()")
         if let window = UIApplication.shared.keyWindow {
             blackView.backgroundColor = UIColor(white: 0, alpha: 0.5)
             blackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleDismiss)))
