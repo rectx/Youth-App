@@ -9,10 +9,10 @@
 import Foundation
 
 class Setting: NSObject {
-    let name: String
+    let name: SettingName
     let imageName: String
     
-    init(name: String, imageName: String) {
+    init(name: SettingName, imageName: String) {
         self.name = name
         self.imageName = imageName
     }

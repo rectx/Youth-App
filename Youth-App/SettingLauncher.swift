@@ -25,12 +25,12 @@ class SettingLauncher: NSObject, UICollectionViewDelegateFlowLayout {
     
     let settings: [Setting] = {
         return [
-            Setting(name: "Settings", imageName: "settings"),
-            Setting(name: "Terms & privacy policy", imageName: "privacy"),
-            Setting(name: "Send Feedback", imageName: "feedback"),
-            Setting(name: "Help", imageName: "help"),
-            Setting(name: "Switch Account", imageName: "switch_account"),
-            Setting(name: "Cancel", imageName: "cancel")
+            Setting(name: .Settings, imageName: "settings"),
+            Setting(name: .TermsPrivacy,imageName: "privacy"),
+            Setting(name: .SendFeedback, imageName: "feedback"),
+            Setting(name: .Help, imageName: "help"),
+            Setting(name: .SwitchAccount, imageName: "switch_account"),
+            Setting(name: .Cancel, imageName: "cancel")
         ]
     }()
     
@@ -75,7 +75,7 @@ class SettingLauncher: NSObject, UICollectionViewDelegateFlowLayout {
                 self.collectionView.frame = CGRect(x: 0, y: window.frame.height, width: window.frame.width, height: window.frame.height)
             }
         }) { (completed: Bool) in
-            if setting.name != "" && setting.name != "Cancel" {
+            if setting.name != .Cancel {
                 self.homeController?.showControllerForSettings(setting: setting)
             }
         }
