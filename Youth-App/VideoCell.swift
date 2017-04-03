@@ -16,7 +16,6 @@ class VideoCell: BaseCell {
             titleLabel.text = video?.title
             setupThumbnailImage()
             setupProfileImageImage()
-            
             if let channelName = video?.channel?.name, let numberOfView = video?.numberOfView {
                 
                 let numberFormatter = NumberFormatter()

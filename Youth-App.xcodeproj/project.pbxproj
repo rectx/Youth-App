@@ -19,6 +19,7 @@
 		73408CBC1E8D56770078EE50 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73408CBB1E8D56770078EE50 /* MenuBar.swift */; };
 		73408CBE1E8D5F5D0078EE50 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73408CBD1E8D5F5D0078EE50 /* MenuCell.swift */; };
 		73ADD72D1E8D12AC001185F4 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ADD72C1E8D12AC001185F4 /* UIColorExtension.swift */; };
+		73C9E1431E9236CC008CE6A3 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C9E1421E9236CC008CE6A3 /* ApiService.swift */; };
 		73CD67B01E9153A500BD12ED /* SettingName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CD67AF1E9153A500BD12ED /* SettingName.swift */; };
 		73D86D911E8FA10E0050E86F /* SettingLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D86D901E8FA10E0050E86F /* SettingLauncher.swift */; };
 		73D86D931E8FB05E0050E86F /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D86D921E8FB05E0050E86F /* SettingCell.swift */; };
@@ -42,6 +43,7 @@
 		73408CBB1E8D56770078EE50 /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		73408CBD1E8D5F5D0078EE50 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		73ADD72C1E8D12AC001185F4 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		73C9E1421E9236CC008CE6A3 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		73CD67AF1E9153A500BD12ED /* SettingName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingName.swift; sourceTree = "<group>"; };
 		73D86D901E8FA10E0050E86F /* SettingLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingLauncher.swift; sourceTree = "<group>"; };
 		73D86D921E8FB05E0050E86F /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		730B18561E8CFB7600F013A8 /* Youth-App */ = {
 			isa = PBXGroup;
 			children = (
+				73C9E1411E92369E008CE6A3 /* ApiService */,
 				730B187C1E8CFCE700F013A8 /* Views */,
 				730B187A1E8CFC7B00F013A8 /* Helps */,
 				730B18791E8CFC7600F013A8 /* Utils */,
@@ -141,6 +144,14 @@
 				73D86D921E8FB05E0050E86F /* SettingCell.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		73C9E1411E92369E008CE6A3 /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				73C9E1421E9236CC008CE6A3 /* ApiService.swift */,
+			);
+			name = ApiService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +238,7 @@
 				73ADD72D1E8D12AC001185F4 /* UIColorExtension.swift in Sources */,
 				730B18751E8CFC3F00F013A8 /* Video.swift in Sources */,
 				730B18701E8CFC3F00F013A8 /* BaseCell.swift in Sources */,
+				73C9E1431E9236CC008CE6A3 /* ApiService.swift in Sources */,
 				730B18581E8CFB7600F013A8 /* AppDelegate.swift in Sources */,
 				73CD67B01E9153A500BD12ED /* SettingName.swift in Sources */,
 				73EEE7D51E8EB075008DA1C7 /* CustomImageView.swift in Sources */,
