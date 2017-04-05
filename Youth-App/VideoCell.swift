@@ -16,7 +16,7 @@ class VideoCell: BaseCell {
             titleLabel.text = video?.title
             setupThumbnailImage()
             setupProfileImageImage()
-            if let channelName = video?.channel?.name, let numberOfView = video?.numberOfView {
+            if let channelName = video?.channel?.name, let numberOfView = video?.number_of_views {
                 
                 let numberFormatter = NumberFormatter()
                 numberFormatter.numberStyle = .decimal
@@ -41,14 +41,14 @@ class VideoCell: BaseCell {
     }
     
     func setupThumbnailImage(){
-        if let thumbnailImageURL = video?.thumbnailImageName {
+        if let thumbnailImageURL = video?.thumbnail_image_name {
             loadingIndicator.startAnimating()
             thumbnailImageView.loadImageUsingUrlString(urlString: thumbnailImageURL)
         }
     }
     
     func setupProfileImageImage() {
-        if let profileImageURL = video?.channel?.profileImageName {
+        if let profileImageURL = video?.channel?.profile_image_name {
             userProfileImageView.loadImageUsingUrlString(urlString: profileImageURL)
         }
     }

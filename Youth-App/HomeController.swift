@@ -49,7 +49,9 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         }
         
         self.collectionView?.backgroundColor = UIColor.white
-        self.collectionView?.register(FeedCell.self, forCellWithReuseIdentifier: Constants.identifierCell)
+        self.collectionView?.register(FeedCell.self, forCellWithReuseIdentifier: Constants.videoCell)
+        self.collectionView?.register(TrendingCell.self, forCellWithReuseIdentifier: Constants.trendingCell)
+        self.collectionView?.register(SubscriptionsCell.self, forCellWithReuseIdentifier: Constants.subscriptionsCell)
         self.collectionView?.contentInset = UIEdgeInsetsMake(50, 0, 0, 0)
         self.collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(50, 0, 0, 0)
         self.collectionView?.isPagingEnabled = true
@@ -130,7 +132,22 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = self.collectionView?.dequeueReusableCell(withReuseIdentifier: Constants.identifierCell, for: indexPath) as? FeedCell
+        
+        var cell: UICollectionViewCell?
+        
+        switch indexPath.item {
+        case 0:
+            cell = self.collectionView?.dequeueReusableCell(withReuseIdentifier: Constants.videoCell, for: indexPath)
+        case 1:
+            cell = (self.collectionView?.dequeueReusableCell(withReuseIdentifier: Constants.trendingCell, for: indexPath))
+        case 2:
+            cell = (self.collectionView?.dequeueReusableCell(withReuseIdentifier: Constants.subscriptionsCell, for: indexPath))
+        case 3:
+            cell = (self.collectionView?.dequeueReusableCell(withReuseIdentifier: Constants.trendingCell, for: indexPath))
+        default: break
+            
+        }
+        
         return cell!
     }
     

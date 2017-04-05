@@ -10,5 +10,9 @@ import Foundation
 
 class Constants {
     static let identifierCell: String = "Cell"
-    static let homeURL: String = "https://s3-us-west-2.amazonaws.com/youtubeassets/home.json"
+    static let videoCell: String = "videoCell"
+    static let trendingCell: String = "trendingCell"
+    static let subscriptionsCell: String = "subscriptionsCell"
+    static let accountCell: String = "accountCell"
+    static let baseURL: String = "https://s3-us-west-2.amazonaws.com/youtubeassets"
 }
