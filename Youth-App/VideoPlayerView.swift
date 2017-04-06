@@ -151,7 +151,7 @@ class VideoPlayerView: UIView {
         
         backgroundColor = UIColor.black
         
-        let urlString = "https://multicdn.synq.fm/projects/fb/ec/fbec62099ed94d7ba7692c7353d20435/derivatives/videos/0c/19/0c19b46991ae49be994cec9f3909329a/hls/0c19b46991ae49be994cec9f3909329a_hls.m3u8"
+        let urlString = "http://raycomgroup.videodownload.worldnow.com/RAYCOMGROUP_20170406012054647AA.mp4"
         
         if let url = URL(string: urlString) {
             player = AVPlayer(url: url)
@@ -193,7 +193,7 @@ class VideoPlayerView: UIView {
             
             if let duaration = player?.currentItem?.duration {
                 let seconds = CMTimeGetSeconds(duaration)
-                let secondsText = Int(seconds) % 60
+                let secondsText = Int64(seconds) % 60
                 let minutesText = String(format: "%02d", Int(seconds) / 60)
                 if secondsText < 10 {
                     videoLengthLabel.text = "\(minutesText):0\(secondsText)"
