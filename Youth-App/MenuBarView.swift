@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MenuBar: UIView, UICollectionViewDelegateFlowLayout {
+class MenuBarView: UIView, UICollectionViewDelegateFlowLayout {
     
     let imageNames = ["home", "trending", "subscriptions", "account"]
     
@@ -60,7 +60,7 @@ class MenuBar: UIView, UICollectionViewDelegateFlowLayout {
     }
 }
 
-extension MenuBar: UICollectionViewDataSource {
+extension MenuBarView: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return imageNames.count
@@ -74,7 +74,7 @@ extension MenuBar: UICollectionViewDataSource {
     }
 }
 
-extension MenuBar: UICollectionViewDelegate {
+extension MenuBarView: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         homeController?.scrollToMenuIndex(menuIndex: indexPath.item)
