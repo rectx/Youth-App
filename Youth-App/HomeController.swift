@@ -18,16 +18,15 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         return launcher
     }()
     
-    lazy var menuBar: MenuBar = {
-        let menuBar = MenuBar()
+    lazy var menuBar: MenuBarView = {
+        let menuBar = MenuBarView()
         menuBar.homeController = self
         return menuBar
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
+
         self.navigationController?.navigationBar.isTranslucent = false
         
         let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.width - 32, height: self.view.frame.height))
@@ -143,7 +142,7 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         case 2:
             cell = (self.collectionView?.dequeueReusableCell(withReuseIdentifier: Constants.subscriptionsCell, for: indexPath))
         case 3:
-            cell = (self.collectionView?.dequeueReusableCell(withReuseIdentifier: Constants.trendingCell, for: indexPath))
+            cell = (self.collectionView?.dequeueReusableCell(withReuseIdentifier: Constants.videoCell, for: indexPath))
         default: break
             
         }

@@ -28,29 +28,22 @@ class ApiService: NSObject {
     
     func fetchFeedForUrlString(urlString: String, completion: @escaping ([Video]) -> ()) {
         let url = URL(string: urlString)
-        
         URLSession.shared.dataTask(with: url!) { data, reponse, error in
             if error != nil {
                 print(error!)
                 return
             }
-            
             do {
-                
                 if let unwrappedData = data, let jsonDictionaries = try JSONSerialization.jsonObject(with: unwrappedData, options: .mutableContainers) as? [[String: AnyObject]] {
-                        
                         DispatchQueue.main.async {
                             completion(jsonDictionaries.map({return Video(dictionary: $0)}))
                         }
                 }
-     
             } catch let jsonError {
                 print(jsonError)
             }
-            
         }.resume()
     }
-
 }
 
 /*
